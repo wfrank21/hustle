@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hustle – Datenschutzerklärung / Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #5856d6;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --fg: #f5f5f7;
+      --muted: #a1a1a6;
+      --accent: #8b89ff;
+      --border: #3a3a3c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .lang-switch {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .lang-switch button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--fg);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3em;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.3em; }
+  .muted { color: var(--muted); font-size: 0.92rem; }
+  .updated { color: var(--muted); font-size: 0.85rem; margin-top: -8px; margin-bottom: 24px; }
+  a { color: var(--accent); }
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+  .placeholder {
+    background: rgba(255, 200, 0, 0.15);
+    border: 1px dashed #c9960c;
+    border-radius: 6px;
+    padding: 2px 6px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Hustle</h1>
+    <div class="lang-switch">
+      <button id="btn-de" onclick="setLang('de')">Deutsch</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ============================= DEUTSCH ============================= -->
+  <div data-lang="de" id="content-de">
+    <h1 style="font-size:1.3rem; border:none; margin-bottom:4px;">Datenschutzerklärung</h1>
+    <p class="updated">Stand: <span class="placeholder">19.08.2026</span></p>
+
+    <p>
+      Diese Datenschutzerklärung gilt für die App <strong>Hustle</strong> (Schicht- und
+      Zeiterfassung) für iPhone, iPad, Mac und Apple Watch.
+    </p>
+
+    <h2>Verantwortlicher</h2>
+    <p>
+      <span class="Wolfgang Frank">[Vollständiger Name]</span><br>
+      <span class="Meinigstr. 27A, 38867 Bad Harzburg">[Anschrift, falls angegeben]</span><br>
+      E-Mail: <a href="mailto:hustle@frawas.de">hustle@frawas.de</a>
+    </p>
+
+    <h2>Kurz gesagt</h2>
+    <p>
+      Hustle enthält keine Werbung, keine Analyse- oder Tracking-Dienste und keine
+      Software Development Kits (SDKs) von Dritten. Es gibt keine Nutzerkonten – die
+      Nutzung der App ist ausschließlich an deine Apple-ID (iCloud) gebunden. Deine
+      Schicht- und Zeiterfassungsdaten werden ausschließlich in deinem privaten
+      iCloud-Account gespeichert und synchronisiert; wir als Entwickler haben darauf
+      keinen Zugriff.
+    </p>
+
+    <h2>Welche Daten werden verarbeitet?</h2>
+
+    <p><strong>Schicht- und Zeiterfassungsdaten (iCloud/CloudKit-Synchronisierung)</strong></p>
+    <p>
+      Schichten, Schichttypen, Zeiterfassungen, Pausen und Einstellungen (z. B. Wochenarbeitszeit,
+      Bundesland für Feiertage) werden lokal auf deinem Gerät gespeichert und über den
+      privaten CloudKit-Bereich deines Apple-ID-Accounts automatisch mit deinen anderen
+      Geräten synchronisiert (iPhone, iPad, Mac, Apple Watch). Diese Daten werden von
+      Apple im Rahmen von iCloud verarbeitet und sind für uns als Entwickler nicht
+      einsehbar. Es gelten zusätzlich die Datenschutzbestimmungen von Apple
+      (<a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noopener">apple.com/legal/privacy</a>).
+    </p>
+
+    <p><strong>Zusätzliche Sicherung in iCloud Drive</strong></p>
+    <p>
+      Einmal täglich sowie auf manuellen Wunsch legt die App zusätzlich eine lesbare
+      Sicherungskopie deiner Daten im app-eigenen iCloud-Drive-Bereich deines
+      Apple-ID-Accounts ab. Auch diese Sicherung verlässt niemals deinen privaten
+      iCloud-Speicher und ist für uns nicht einsehbar.
+    </p>
+
+    <p><strong>Kalenderzugriff (optional)</strong></p>
+    <p>
+      Wenn du die optionale Funktion "Schichten aus Kalender importieren" nutzt, fragt die
+      App Zugriff auf deine Gerätekalender an. Ausgewählte Kalendertermine (Titel,
+      Start-/Endzeit) werden ausschließlich lokal auf deinem Gerät gelesen, um daraus
+      Schichten anzulegen. Diese Daten werden nicht an uns oder Dritte übertragen. Du
+      kannst den Zugriff jederzeit in den Systemeinstellungen deines Geräts widerrufen.
+    </p>
+
+    <p><strong>Benachrichtigungen</strong></p>
+    <p>
+      Optionale Erinnerungen (z. B. "Deine Schicht beginnt gleich") werden als rein
+      lokale Benachrichtigungen direkt auf deinem Gerät geplant. Es findet keine
+      Übertragung an einen Push-Server statt.
+    </p>
+
+    <p><strong>Widgets, Live Activity und Apple Watch</strong></p>
+    <p>
+      Home-Bildschirm-Widgets, die Live Activity (Sperrbildschirm/Dynamic Island) und die
+      Apple-Watch-App greifen auf dieselben, lokal auf deinem Gerät bzw. über iCloud
+      synchronisierten Daten zu. Es werden dabei keine zusätzlichen Daten erhoben oder an
+      uns übertragen.
+    </p>
+
+    <h2>Rechtsgrundlage</h2>
+    <p>
+      Die Verarbeitung erfolgt zur Erfüllung des Nutzungsvertrags mit dir (Art. 6 Abs. 1
+      lit. b DSGVO) sowie – soweit du optionale Funktionen wie den Kalenderimport oder
+      Benachrichtigungen aktivierst – auf Grundlage deiner Einwilligung (Art. 6 Abs. 1
+      lit. a DSGVO), die du jederzeit widerrufen kannst.
+    </p>
+
+    <h2>Empfänger / Weitergabe an Dritte</h2>
+    <p>
+      Eine Weitergabe deiner Daten an Dritte findet nicht statt. Einzige Ausnahme ist
+      Apple als Anbieter von iCloud/CloudKit, über dessen Infrastruktur die
+      Synchronisierung und Sicherung technisch abgewickelt wird (siehe oben).
+    </p>
+
+    <h2>Speicherdauer</h2>
+    <p>
+      Deine Daten bleiben gespeichert, solange du sie nicht löschst bzw. solange dein
+      iCloud-Account aktiv ist. Du kannst einzelne Einträge jederzeit in der App löschen;
+      diese Löschung wird über CloudKit auf alle deine Geräte übertragen.
+    </p>
+
+    <h2>Deine Rechte</h2>
+    <p>Du hast nach der DSGVO insbesondere folgende Rechte:</p>
+    <ul>
+      <li>Auskunft über die zu dir gespeicherten Daten (Art. 15 DSGVO)</li>
+      <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+      <li>Löschung deiner Daten (Art. 17 DSGVO)</li>
+      <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+      <li>Beschwerde bei einer Datenschutz-Aufsichtsbehörde</li>
+    </ul>
+    <p>
+      Da deine Daten ausschließlich in deinem eigenen iCloud-Account liegen, kannst du die
+      meisten dieser Rechte direkt selbst ausüben: durch Löschen von Einträgen in der App,
+      durch Löschen der App-Daten unter iOS/macOS-Einstellungen &gt; [Dein Name] &gt; iCloud
+      &gt; Speicher verwalten &gt; Hustle, oder durch vollständiges Deinstallieren der App.
+      Für alle weiteren Anliegen erreichst du uns unter der oben genannten E-Mail-Adresse.
+    </p>
+
+    <h2>Kinder</h2>
+    <p>
+      Hustle richtet sich nicht gezielt an Kinder unter 16 Jahren. Es werden keine
+      altersbezogenen Daten erhoben oder ausgewertet.
+    </p>
+
+    <h2>Änderungen dieser Erklärung</h2>
+    <p>
+      Wir passen diese Datenschutzerklärung an, sobald sich die Datenverarbeitung in der
+      App ändert. Die jeweils aktuelle Version findest du immer unter dieser Adresse.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Bei Fragen zum Datenschutz erreichst du uns jederzeit unter
+      <a href="mailto:w@frawas.de">w@frawas.de</a>.
+    </p>
+  </div>
+
+  <!-- ============================= ENGLISH ============================= -->
+  <div data-lang="en" id="content-en">
+    <h1 style="font-size:1.3rem; border:none; margin-bottom:4px;">Privacy Policy</h1>
+    <p class="updated">Last updated: <span class="placeholder">[insert date]</span></p>
+
+    <p>
+      This privacy policy applies to the <strong>Hustle</strong> app (shift and time
+      tracking) for iPhone, iPad, Mac, and Apple Watch.
+    </p>
+
+    <h2>Data Controller</h2>
+    <p>
+      <span class="placeholder">[Full name]</span><br>
+      <span class="placeholder">[Address, if provided]</span><br>
+      Email: <a href="mailto:w@frawas.de">w@frawas.de</a>
+    </p>
+
+    <h2>In short</h2>
+    <p>
+      Hustle contains no advertising, no analytics or tracking services, and no
+      third-party SDKs. There are no user accounts — using the app is tied exclusively
+      to your Apple ID (iCloud). Your shift and time-tracking data is stored and
+      synchronized solely within your own private iCloud account; we, as the developer,
+      have no access to it.
+    </p>
+
+    <h2>What data is processed?</h2>
+
+    <p><strong>Shift and time-tracking data (iCloud/CloudKit sync)</strong></p>
+    <p>
+      Shifts, shift types, time entries, breaks, and settings (e.g. weekly working hours,
+      the region used for public holidays) are stored locally on your device and
+      automatically synced with your other devices (iPhone, iPad, Mac, Apple Watch)
+      through the private CloudKit area of your Apple ID account. This data is processed
+      by Apple as part of iCloud and is not accessible to us as the developer. Apple's own
+      privacy policy additionally applies
+      (<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>).
+    </p>
+
+    <p><strong>Additional backup in iCloud Drive</strong></p>
+    <p>
+      Once a day, and whenever you trigger it manually, the app also writes a
+      human-readable backup copy of your data to the app's own iCloud Drive area within
+      your Apple ID account. This backup also never leaves your private iCloud storage
+      and is not accessible to us.
+    </p>
+
+    <p><strong>Calendar access (optional)</strong></p>
+    <p>
+      If you use the optional "Import shifts from calendar" feature, the app requests
+      access to your device calendars. Selected calendar events (title, start/end time)
+      are read exclusively on your device to create shifts from them. This data is never
+      transmitted to us or any third party. You can revoke this access at any time in
+      your device's system settings.
+    </p>
+
+    <p><strong>Notifications</strong></p>
+    <p>
+      Optional reminders (e.g. "Your shift is about to start") are scheduled as purely
+      local notifications directly on your device. No data is sent to a push server.
+    </p>
+
+    <p><strong>Widgets, Live Activity, and Apple Watch</strong></p>
+    <p>
+      Home Screen widgets, the Live Activity (Lock Screen/Dynamic Island), and the Apple
+      Watch app access the same data stored locally on your device and synced via iCloud.
+      No additional data is collected or transmitted to us.
+    </p>
+
+    <h2>Legal basis</h2>
+    <p>
+      Processing is carried out to fulfil the usage agreement with you (Art. 6(1)(b)
+      GDPR) and, where you enable optional features such as calendar import or
+      notifications, on the basis of your consent (Art. 6(1)(a) GDPR), which you may
+      withdraw at any time.
+    </p>
+
+    <h2>Recipients / disclosure to third parties</h2>
+    <p>
+      Your data is not shared with any third parties. The only exception is Apple, as the
+      provider of iCloud/CloudKit, whose infrastructure technically handles
+      synchronization and backup (see above).
+    </p>
+
+    <h2>Retention period</h2>
+    <p>
+      Your data remains stored for as long as you do not delete it, or for as long as
+      your iCloud account remains active. You can delete individual entries in the app at
+      any time; deletions are propagated to all your devices via CloudKit.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>Under the GDPR you have, among others, the following rights:</p>
+    <ul>
+      <li>Right of access to your stored data (Art. 15 GDPR)</li>
+      <li>Right to rectification of inaccurate data (Art. 16 GDPR)</li>
+      <li>Right to erasure of your data (Art. 17 GDPR)</li>
+      <li>Right to restriction of processing (Art. 18 GDPR)</li>
+      <li>Right to data portability (Art. 20 GDPR)</li>
+      <li>Right to object to processing (Art. 21 GDPR)</li>
+      <li>Right to lodge a complaint with a data protection supervisory authority</li>
+    </ul>
+    <p>
+      Since your data lives exclusively in your own iCloud account, you can exercise most
+      of these rights yourself directly: by deleting entries in the app, by deleting the
+      app's data under iOS/macOS Settings &gt; [your name] &gt; iCloud &gt; Manage Storage
+      &gt; Hustle, or by fully uninstalling the app. For anything else, you can reach us at
+      the email address above.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Hustle is not specifically directed at children under 16. No age-related data is
+      collected or evaluated.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We will update this privacy policy whenever data processing within the app changes.
+      The current version is always available at this address.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have any questions about privacy, you can reach us at any time at
+      <a href="mailto:w@frawas.de">w@frawas.de</a>.
+    </p>
+  </div>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+    });
+    document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+    window.location.hash = lang;
+  }
+  var initial = (window.location.hash || '').replace('#', '') === 'en' ? 'en' : 'de';
+  setLang(initial);
+</script>
+
+</body>
+</html>
