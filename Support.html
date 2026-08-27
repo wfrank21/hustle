@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hustle – Support</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6e6e73;
+    --accent: #5856d6;
+    --border: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1c1e;
+      --fg: #f5f5f7;
+      --muted: #a1a1a6;
+      --accent: #8b89ff;
+      --border: #3a3a3c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .lang-switch {
+    display: inline-flex;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .lang-switch button {
+    appearance: none;
+    border: none;
+    background: transparent;
+    color: var(--fg);
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin-top: 2.2em;
+    margin-bottom: 0.6em;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.3em;
+  }
+  h3 {
+    font-size: 1rem;
+    margin-top: 1.4em;
+    margin-bottom: 0.3em;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.3em; }
+  .muted { color: var(--muted); font-size: 0.92rem; }
+  a { color: var(--accent); }
+  [data-lang] { display: none; }
+  [data-lang].active { display: block; }
+  .contact-box {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 1em 0;
+  }
+  .contact-box a {
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Hustle</h1>
+    <div class="lang-switch">
+      <button id="btn-de" onclick="setLang('de')">Deutsch</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ============================= DEUTSCH ============================= -->
+  <div data-lang="de" id="content-de">
+    <h1 style="font-size:1.3rem; border:none; margin-bottom:4px;">Support</h1>
+    <p class="muted">Hilfe & Kontakt für die App Hustle (Schicht- und Zeiterfassung)</p>
+
+    <p>
+      Du hast eine Frage zu Hustle, etwas funktioniert nicht wie erwartet, oder du hast
+      einen Wunsch für eine neue Funktion? Schreib uns einfach eine E-Mail – wir
+      antworten so schnell wie möglich.
+    </p>
+
+    <div class="contact-box">
+      E-Mail: <a href="mailto:hustle@frawas.de">hustle@frawas.de</a><br>
+      <span class="muted">Bitte möglichst mit einer kurzen Beschreibung des Problems,
+      idealerweise mit den Schritten, wie es aufgetreten ist, und ob es auf iPhone, iPad,
+      Mac oder Apple Watch war.</span>
+    </div>
+
+    <h2>Häufige Fragen</h2>
+
+    <h3>Werden meine Daten zwischen iPhone, iPad, Mac und Apple Watch synchronisiert?</h3>
+    <p>
+      Ja. Solange auf allen Geräten iCloud aktiviert und mit demselben Apple-Account
+      angemeldet ist, werden Schichten, Zeiterfassungen und Einstellungen automatisch im
+      Hintergrund über deinen privaten iCloud-Account synchronisiert.
+    </p>
+
+    <h3>Auf einem Gerät fehlen aktuelle Schichten oder Zeiten – was kann ich tun?</h3>
+    <p>
+      iCloud-Sync kann je nach Verbindung etwas Zeit brauchen. Prüfe, ob iCloud für
+      Hustle in den Einstellungen deines Geräts aktiviert ist und eine
+      Internetverbindung besteht, und öffne die App danach einmal auf dem betroffenen
+      Gerät, damit sie sich aktualisieren kann.
+    </p>
+
+    <h3>Wie kann ich meine Daten sichern oder wiederherstellen?</h3>
+    <p>
+      Hustle legt zusätzlich zur iCloud-Synchronisierung automatisch (mindestens einmal
+      täglich) eine lesbare Sicherung in iCloud Drive an. Unter Einstellungen findest du
+      die Liste vorhandener Sicherungen sowie die Möglichkeit, jederzeit manuell zu
+      sichern oder fehlende Einträge aus einer Sicherung wiederherzustellen.
+    </p>
+
+    <h3>Ich habe einen Fehler gefunden oder vermisse eine Funktion – wie melde ich das?</h3>
+    <p>
+      Am liebsten per E-Mail an <a href="mailto:hustle@frawas.de">hustle@frawas.de</a> –
+      gerne mit Screenshot, falls es sich um ein Anzeigeproblem handelt.
+    </p>
+
+    <h3>Wie lösche ich alle meine Daten?</h3>
+    <p>
+      Da deine Daten ausschließlich in deinem eigenen iCloud-Account liegen, kannst du sie
+      selbst löschen: über die Einträge in der App, über iOS/macOS-Einstellungen &gt;
+      [Dein Name] &gt; iCloud &gt; Speicher verwalten &gt; Hustle, oder durch
+      Deinstallieren der App. Details dazu findest du in der Datenschutzerklärung.
+    </p>
+
+    <h2>Datenschutz</h2>
+    <p>
+      Informationen darüber, welche Daten Hustle verarbeitet und wie, findest du in
+      unserer <a href="./index.html">Datenschutzerklärung</a>.
+    </p>
+  </div>
+
+  <!-- ============================= ENGLISH ============================= -->
+  <div data-lang="en" id="content-en">
+    <h1 style="font-size:1.3rem; border:none; margin-bottom:4px;">Support</h1>
+    <p class="muted">Help & contact for the Hustle app (shift and time tracking)</p>
+
+    <p>
+      Have a question about Hustle, run into something that isn't working as expected, or
+      have an idea for a new feature? Just send us an email – we'll get back to you as
+      soon as we can.
+    </p>
+
+    <div class="contact-box">
+      Email: <a href="mailto:hustle@frawas.de">hustle@frawas.de</a><br>
+      <span class="muted">Please include a short description of the issue if possible,
+      ideally the steps that led to it, and whether it happened on iPhone, iPad, Mac, or
+      Apple Watch.</span>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Does my data sync between iPhone, iPad, Mac, and Apple Watch?</h3>
+    <p>
+      Yes. As long as iCloud is enabled on all devices and signed in with the same Apple
+      ID, shifts, time entries, and settings are automatically synced in the background
+      through your private iCloud account.
+    </p>
+
+    <h3>A device is missing recent shifts or time entries – what should I do?</h3>
+    <p>
+      iCloud sync can take a moment depending on your connection. Check that iCloud is
+      enabled for Hustle in your device's settings and that you have an internet
+      connection, then open the app once on the affected device so it can refresh.
+    </p>
+
+    <h3>How can I back up or restore my data?</h3>
+    <p>
+      In addition to iCloud sync, Hustle automatically writes a human-readable backup to
+      iCloud Drive at least once a day. Under Settings you'll find the list of existing
+      backups, along with the option to trigger a manual backup at any time or restore
+      any entries that are missing from a backup.
+    </p>
+
+    <h3>I found a bug or I'm missing a feature – how do I report it?</h3>
+    <p>
+      Email us at <a href="mailto:hustle@frawas.de">hustle@frawas.de</a> – a screenshot is
+      always welcome if it's a display issue.
+    </p>
+
+    <h3>How do I delete all my data?</h3>
+    <p>
+      Since your data lives exclusively in your own iCloud account, you can delete it
+      yourself: through the entries in the app, through iOS/macOS Settings &gt; [your
+      name] &gt; iCloud &gt; Manage Storage &gt; Hustle, or by uninstalling the app. See
+      the privacy policy for details.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>
+      For details on what data Hustle processes and how, see our
+      <a href="./index.html">Privacy Policy</a>.
+    </p>
+  </div>
+
+</div>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('active', el.getAttribute('data-lang') === lang);
+    });
+    document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.documentElement.lang = lang;
+    window.location.hash = lang;
+  }
+  var initial = (window.location.hash || '').replace('#', '') === 'en' ? 'en' : 'de';
+  setLang(initial);
+</script>
+
+</body>
+</html>
